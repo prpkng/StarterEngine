@@ -12,19 +12,19 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Content Include="..\FAudio.dll">
+      <Content Include="FAudio.dll">
         <Link>FAudio.dll</Link>
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Content>
-      <Content Include="..\FNA3D.dll">
+      <Content Include="FNA3D.dll">
         <Link>FNA3D.dll</Link>
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Content>
-      <Content Include="..\libtheorafile.dll">
+      <Content Include="libtheorafile.dll">
         <Link>libtheorafile.dll</Link>
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Content>
-      <Content Include="..\SDL3.dll">
+      <Content Include="SDL3.dll">
         <Link>SDL3.dll</Link>
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Content>
