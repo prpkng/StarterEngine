@@ -1,9 +1,6 @@
-﻿using Microsoft.Xna.Framework;
+﻿using Game.Source;
 
 Console.WriteLine("Hello, World!");
 
-using (Game game = new Game())
-{
-    var g = new GraphicsDeviceManager(game);
-    game.Run();
-}
+using var game = new StarterGame();
+game.Run();
