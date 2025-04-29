@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopWin", "DesktopWin\De
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FNA.Core", "FNA\FNA.Core.csproj", "{176CB546-CEE7-4247-8198-608ED1F4F53E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopLinux", "DesktopLinux\DesktopLinux.csproj", "{50CE9806-E1CE-4F32-B6FE-E781CFE143CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +26,10 @@ Global
 		{176CB546-CEE7-4247-8198-608ED1F4F53E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{176CB546-CEE7-4247-8198-608ED1F4F53E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{176CB546-CEE7-4247-8198-608ED1F4F53E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50CE9806-E1CE-4F32-B6FE-E781CFE143CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50CE9806-E1CE-4F32-B6FE-E781CFE143CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50CE9806-E1CE-4F32-B6FE-E781CFE143CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50CE9806-E1CE-4F32-B6FE-E781CFE143CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
