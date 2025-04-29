@@ -1,3 +1,4 @@
+using System.Reflection;
 using Microsoft.Xna.Framework;
 
 namespace Core.Source;
@@ -18,6 +19,8 @@ public class StarterGame : Game
     protected override void Initialize()
     {
         base.Initialize();
+ 
+        SingletonInitializer.InitializeSingletons();
     }
 
     protected override void LoadContent()
