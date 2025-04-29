@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopWin", "DesktopWin\DesktopWin.csproj", "{C0E111E1-925B-423E-8BA2-7E42BF0C57E5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FNA.Core", "FNA\FNA.Core.csproj", "{176CB546-CEE7-4247-8198-608ED1F4F53E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,6 +20,10 @@ Global
 		{C0E111E1-925B-423E-8BA2-7E42BF0C57E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0E111E1-925B-423E-8BA2-7E42BF0C57E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0E111E1-925B-423E-8BA2-7E42BF0C57E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{176CB546-CEE7-4247-8198-608ED1F4F53E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{176CB546-CEE7-4247-8198-608ED1F4F53E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{176CB546-CEE7-4247-8198-608ED1F4F53E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{176CB546-CEE7-4247-8198-608ED1F4F53E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

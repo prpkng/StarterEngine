@@ -1,15 +1,15 @@
 using Microsoft.Xna.Framework;
 
-namespace Game.Source;
+namespace Core.Source;
 
-public class StarterGame : Microsoft.Xna.Framework.Game
+public class StarterGame : Game
 {
-    public StarterGame()
+    public StarterGame(ConfigFile config)
     {
         _ = new GraphicsDeviceManager(this)
         {
-            PreferredBackBufferWidth = 640,
-            PreferredBackBufferHeight = 360,
+            PreferredBackBufferWidth = config.WindowWidth,
+            PreferredBackBufferHeight = config.WindowHeight,
             IsFullScreen = false,
             SynchronizeWithVerticalRetrace = true //V-Sync
         };
