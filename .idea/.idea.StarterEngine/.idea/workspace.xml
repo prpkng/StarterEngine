@@ -8,13 +8,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28d77ebd-a832-465c-88f3-404f87d5b3f0" name="Changes" comment="Config file for window size">
-      <change afterPath="$PROJECT_DIR$/Core/Source/InputManager.cs" afterDir="false" />
+    <list default="true" id="28d77ebd-a832-465c-88f3-404f87d5b3f0" name="Changes" comment="Basic singleton system and updated to dotnet 9">
+      <change afterPath="$PROJECT_DIR$/DesktopWin/config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StarterEngine/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StarterEngine/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Core.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Source/Singleton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Source/Singleton.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Source/StarterGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Source/StarterGame.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DesktopWin/DesktopWin.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DesktopWin/DesktopWin.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesktopWin/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesktopWin/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +116,7 @@
       <workItem from="1745803167913" duration="1996000" />
       <workItem from="1745862741042" duration="52000" />
       <workItem from="1745862875450" duration="699000" />
-      <workItem from="1745885746426" duration="3892000" />
+      <workItem from="1745885746426" duration="5384000" />
     </task>
     <task id="LOCAL-00001" summary="Starter commit">
       <option name="closed" value="true" />
@@ -157,7 +158,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745887707331</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Basic singleton system and updated to dotnet 9">
+      <option name="closed" value="true" />
+      <created>1745889658585</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1745889658585</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +174,17 @@
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Starter commit" />
@@ -172,6 +192,7 @@
     <MESSAGE value="Included FNA as a project in the solution" />
     <MESSAGE value="Basic FNA starter + include prebuilt windows dll's on build" />
     <MESSAGE value="Config file for window size" />
-    <option name="LAST_COMMIT_MESSAGE" value="Config file for window size" />
+    <MESSAGE value="Basic singleton system and updated to dotnet 9" />
+    <option name="LAST_COMMIT_MESSAGE" value="Basic singleton system and updated to dotnet 9" />
   </component>
 </project>

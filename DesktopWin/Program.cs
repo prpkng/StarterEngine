@@ -23,5 +23,5 @@ catch (Exception ex)
 }
 
 
-using var game = new StarterGame(new ConfigFile(1280, 720));
+using var game = new StarterGame(config);
 game.Run();

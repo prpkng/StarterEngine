@@ -1,5 +1,5 @@
-using System.Reflection;
 using Microsoft.Xna.Framework;
+using Serilog;
 
 namespace Core.Source;
 
@@ -19,8 +19,17 @@ public class StarterGame : Game
     protected override void Initialize()
     {
         base.Initialize();
- 
+        
+        // Initialize logger
+        Log.Logger = new LoggerConfiguration()
+            .MinimumLevel.Debug()
+            .WriteTo.Console()
+            .WriteTo.File("logs/latest.log", rollingInterval: RollingInterval.Day)
+            .CreateLogger();
+        
         SingletonInitializer.InitializeSingletons();
+        
+        Log.Information("Game initialization complete!");
     }
 
     protected override void LoadContent()
@@ -45,6 +54,7 @@ public class StarterGame : Game
     {
         // Render stuff in here. Do NOT run game logic in here!
         GraphicsDevice.Clear(Color.CornflowerBlue);
+        
         base.Draw(gameTime);
     }
 }

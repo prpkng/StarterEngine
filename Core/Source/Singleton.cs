@@ -1,4 +1,5 @@
 using System.Reflection;
+using Serilog;
 
 namespace Core.Source;
 
@@ -21,6 +22,7 @@ public static class SingletonInitializer
 {
     public static void InitializeSingletons()
     {
+        Log.Information("Initializing singletons...");
         var types = from type in Assembly.GetExecutingAssembly().GetTypes()
             where type.IsClass
                   && !type.IsAbstract
@@ -29,9 +31,13 @@ public static class SingletonInitializer
                   && type.BaseType.GetGenericTypeDefinition() == typeof(Singleton<>).GetGenericTypeDefinition()
             select type;
 
-        foreach (var type in types)
+
+        var array = types as Type[] ?? types.ToArray();
+        foreach (var type in array)
         {
             typeof(Singleton<>).MakeGenericType(type).GetMethod("InitSingleton")!.Invoke(null, null);
         }
+        
+        Log.Information("   ...Initialized {Count} singletons!", array.Length);
     }
 }
