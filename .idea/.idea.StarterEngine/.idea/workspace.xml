@@ -4,19 +4,23 @@
     <projectFile>DesktopLinux/DesktopLinux.csproj</projectFile>
     <projectFile>DesktopWin/DesktopWin.csproj</projectFile>
     <projectFile>Game/Game.csproj</projectFile>
+    <projectFile>Web/Web.csproj</projectFile>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28d77ebd-a832-465c-88f3-404f87d5b3f0" name="Changes" comment="Basic singleton system and updated to dotnet 9">
-      <change afterPath="$PROJECT_DIR$/DesktopLinux/config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesktopLinux/libFAudio.so.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesktopLinux/libFNA3D.so.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesktopLinux/libSDL3.so.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesktopLinux/libtheorafile.so" afterDir="false" />
+    <list default="true" id="28d77ebd-a832-465c-88f3-404f87d5b3f0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Core/Source/Components/Transform2D.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Source/Hierarchy/GameObject.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Source/Hierarchy/IEntity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Source/Hierarchy/Scene.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Source/TestObject.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Source/Time.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StarterEngine/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StarterEngine/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StarterEngine.sln" beforeDir="false" afterPath="$PROJECT_DIR$/StarterEngine.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Source/InputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Source/Singletons/InputManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Source/Singleton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Source/Singletons/Singleton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Source/StarterGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Source/StarterGame.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,10 +70,11 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Project.DesktopLinux">
+  <component name="RunManager" selected=".NET Project.DesktopWin">
     <configuration name="DesktopLinux" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -138,6 +143,7 @@
       <workItem from="1745862875450" duration="699000" />
       <workItem from="1745885746426" duration="5384000" />
       <workItem from="1745948500779" duration="2006000" />
+      <workItem from="1745970076799" duration="5282000" />
     </task>
     <task id="LOCAL-00001" summary="Starter commit">
       <option name="closed" value="true" />

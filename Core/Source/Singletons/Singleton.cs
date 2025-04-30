@@ -1,7 +1,7 @@
 using System.Reflection;
 using Serilog;
 
-namespace Core.Source;
+namespace Core.Source.Singletons;
 
 public abstract class Singleton<T> where T : class
 {
