@@ -1,8 +1,11 @@
 using Core.Source.Components;
 using Core.Source.Hierarchy;
 using Core.Source.Singletons;
+using ImGuiNET;
+using ImGuiNET.SampleProgram.XNA;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
 using Serilog;
 
 namespace Core.Source;
@@ -11,7 +14,7 @@ public class StarterGame : Game
 {
     public static StarterGame? Instance { get; private set; }
 
-
+    private ImGuiRenderer m_ImGuiRenderer;
     private Scene m_CurrentScene;
     
     public StarterGame(ConfigFile config)
@@ -49,6 +52,10 @@ public class StarterGame : Game
             ])
         ]);
         m_CurrentScene.Load();
+
+        IsMouseVisible = true;
+        m_ImGuiRenderer = new ImGuiRenderer(this);
+        m_ImGuiRenderer.RebuildFontAtlas();
     }
 
     protected override void LoadContent()
@@ -80,6 +87,11 @@ public class StarterGame : Game
         GraphicsDevice.Clear(Color.CornflowerBlue);
         
         m_CurrentScene.Draw();
+        
+        m_ImGuiRenderer.BeforeLayout(gameTime);
+        ImGui.ShowDemoWindow();
+        m_ImGuiRenderer.AfterLayout();
+        
         base.Draw(gameTime);
     }
 }
