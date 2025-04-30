@@ -85,6 +85,13 @@ public class Transform2D(Transform2D? parent = null)
     private Vector2 m_Offset = Vector2.Zero;
     private float m_Rotation = 0;
 
+    public Transform2D(Vector2? position = null, Vector2? scale = null, float rotation = 0) : this(null)
+    {
+        Position = position ?? Vector2.Zero;
+        Scale = scale ?? Vector2.One;
+        RotationDegrees = rotation;
+    }
+    
     void UpdateMatrices()
     {
         var locationMatrix = Matrix.CreateTranslation(new Vector3(Position, 0));

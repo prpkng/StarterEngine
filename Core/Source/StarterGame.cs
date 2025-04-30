@@ -1,3 +1,5 @@
+using Core.Source.Components;
+using Core.Source.Hierarchy;
 using Core.Source.Singletons;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -8,10 +10,9 @@ namespace Core.Source;
 public class StarterGame : Game
 {
     public static StarterGame? Instance { get; private set; }
-    
-    
-    private TestObject m_TestObject;
-    private SpriteBatch m_SpriteBatch;
+
+
+    private Scene m_CurrentScene;
     
     public StarterGame(ConfigFile config)
     {
@@ -30,8 +31,6 @@ public class StarterGame : Game
     {
         base.Initialize();
         
-        m_SpriteBatch = new SpriteBatch(GraphicsDevice);
-        
         // Initialize logger
         Log.Logger = new LoggerConfiguration()
             .MinimumLevel.Debug()
@@ -43,9 +42,13 @@ public class StarterGame : Game
         
         Log.Information("Game initialization complete!");
 
-        
-        m_TestObject = new TestObject("Test Object");
-        m_TestObject.Start();
+
+        m_CurrentScene = new Scene("Test Scene", [
+            new GameObject("Root", new Transform2D(new Vector2(128, 64)), [
+                new TestObject("Test Object")
+            ])
+        ]);
+        m_CurrentScene.Load();
     }
 
     protected override void LoadContent()
@@ -68,7 +71,7 @@ public class StarterGame : Game
         Time.Delta = (float)gameTime.ElapsedGameTime.TotalSeconds;
         Time.DeltaDouble = gameTime.ElapsedGameTime.TotalSeconds;
         
-        m_TestObject.Update();
+        m_CurrentScene.Update();
     }
 
     protected override void Draw(GameTime gameTime)
@@ -76,7 +79,7 @@ public class StarterGame : Game
         // Render stuff in here. Do NOT run game logic in here!
         GraphicsDevice.Clear(Color.CornflowerBlue);
         
-        m_TestObject.Draw(m_SpriteBatch);
+        m_CurrentScene.Draw();
         base.Draw(gameTime);
     }
 }

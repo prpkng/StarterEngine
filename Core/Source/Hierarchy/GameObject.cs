@@ -5,26 +5,25 @@ using Serilog;
 
 namespace Core.Source.Hierarchy;
 
-public class GameObject : IEntity
+public class GameObject(string name = "", GameObject? parent = null) : IEntity
 {
     public List<GameObject> Children = [];
-    public GameObject? Parent;
+    public GameObject? Parent = parent;
 
-    public readonly Transform2D Transform;
+    public readonly Transform2D Transform = new(parent?.Transform ?? null);
 
-    public string Name;
+    public string Name = name;
 
-    public GameObject(string name = "")
+    public GameObject(string name, List<GameObject> children) : this(name)
     {
-        Name = name;
-        Transform = new Transform2D();
+        Children = children;
+        Children.ForEach(child => child.SetParent(this));
     }
-
-    public GameObject(string name, GameObject parent)
+    public GameObject(string name, Transform2D transform, List<GameObject> children) : this(name)
     {
-        Name = name;
-        Parent = parent;
-        Transform = new Transform2D(parent.Transform);
+        Children = children;
+        Transform = transform;
+        Children.ForEach(child => child.SetParent(this));
     }
 
     public virtual void Load()
@@ -74,5 +73,18 @@ public class GameObject : IEntity
         }
 
         Log.Warning("Calling RemoveChild with a invalid GameObject instance ({}) on '{Name}'", child.Name, Name);
+    }
+
+    public void RunRecursively(Action<GameObject> action)
+    {
+        var queue = new Queue<GameObject>();
+        queue.Enqueue(this);
+
+        while (queue.Count != 0)
+        {
+            var obj = queue.Dequeue();
+            action(obj);
+            obj.Children.ForEach(queue.Enqueue);
+        }
     }
 }

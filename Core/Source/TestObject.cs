@@ -25,8 +25,6 @@ public class TestObject(string name = "") : GameObject(name)
 
         var deltaX = (posX - Transform.PositionX);
         
-        Log.Information("{F}", deltaX);
-        
         Transform.RotationDegrees = MathHelper.Lerp(
             Transform.RotationDegrees,
             MathHelper.Clamp(deltaX / 2, -75, 75),
@@ -44,7 +42,7 @@ public class TestObject(string name = "") : GameObject(name)
 
         spriteBatch.Draw(m_Texture,
             new Rectangle((int)Transform.WorldPosition.X, (int)Transform.WorldPosition.Y, 64, 64),
-            new Rectangle(0, 0, 1, 1), Color.White, Transform.Rotation, Vector2.One*0.5f, SpriteEffects.None, 0);
+            new Rectangle(0, 0, 1, 1), Color.White, Transform.WorldRotation.Z, Vector2.One*0.5f, SpriteEffects.None, 0);
 
         spriteBatch.End();
     }

@@ -11,16 +11,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28d77ebd-a832-465c-88f3-404f87d5b3f0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Core/Source/Components/Transform2D.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Source/Hierarchy/GameObject.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Source/Hierarchy/IEntity.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Core/Source/Hierarchy/Scene.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Source/TestObject.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Source/Time.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StarterEngine/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StarterEngine/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Source/InputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Source/Singletons/InputManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Source/Singleton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Source/Singletons/Singleton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Source/Components/Transform2D.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Source/Components/Transform2D.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Source/Hierarchy/GameObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Source/Hierarchy/GameObject.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Source/StarterGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Source/StarterGame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Source/TestObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Source/TestObject.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,25 +51,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Project.DesktopLinux.executor": "Run",
-    ".NET Project.DesktopWin.executor": "Run",
-    ".NET Project.Game.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Project.DesktopLinux.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.DesktopWin.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.Game.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Project.DesktopWin">
     <configuration name="DesktopLinux" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -143,7 +139,8 @@
       <workItem from="1745862875450" duration="699000" />
       <workItem from="1745885746426" duration="5384000" />
       <workItem from="1745948500779" duration="2006000" />
-      <workItem from="1745970076799" duration="5282000" />
+      <workItem from="1745970076799" duration="6389000" />
+      <workItem from="1745976496225" duration="1438000" />
     </task>
     <task id="LOCAL-00001" summary="Starter commit">
       <option name="closed" value="true" />
@@ -193,7 +190,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745889658585</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Hierarchy and gameobjects">
+      <option name="closed" value="true" />
+      <created>1745975397081</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1745975397081</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,6 +225,7 @@
     <MESSAGE value="Basic FNA starter + include prebuilt windows dll's on build" />
     <MESSAGE value="Config file for window size" />
     <MESSAGE value="Basic singleton system and updated to dotnet 9" />
-    <option name="LAST_COMMIT_MESSAGE" value="Basic singleton system and updated to dotnet 9" />
+    <MESSAGE value="Hierarchy and gameobjects" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hierarchy and gameobjects" />
   </component>
 </project>
